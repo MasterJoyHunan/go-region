@@ -1,0 +1,13 @@
+version: '3'
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  pwd: tw5201314
+  db: test
+  prefix:
+
+log:
+  path:
+  level: error # 合法选项 "panic" "fatal" "error" "warn" "warning" "info" "debug" "trace"
