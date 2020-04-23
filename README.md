@@ -1,4 +1,4 @@
-### 使用爬虫爬取国家统计局省市区编码,并存储MYSQL
+### 由GO语言编写的爬虫爬取国家统计局省市区编码,并存储MYSQL
 
 * [国家统计局省市区统计地址](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm)
 
@@ -20,3 +20,6 @@ if err := c.Limit(&colly.LimitRule{
 ```go
 c.Visit("http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2019/index.html")
 ```
+爬取结果不包含港澳台
+
+tips: 在实战项目中，省市区数据应该存储在 redis 中最好
